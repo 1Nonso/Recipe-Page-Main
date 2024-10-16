@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Young-serif;
+  src: url(font/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(font/Outfit-VariableFont_wght.ttf);
+}
+
+:root {
+  --Brown: hsl(14, 45%, 36%);
+  --White: hsl(0, 0%, 100%);
+  --Stone-1: hsl(30, 54%, 90%);
+  --Stone-15: hsl(30, 18%, 87%);
+  --Stone-6: hsl(30, 10%, 34%);
+  --Stone-9: hsl(24, 5%, 18%);
+  --Rose: hsl(332, 51%, 32%);
+  --Rose-5: hsl(330, 100%, 98%);
+}
+
+.Img_section {
+  background: url(images/image-omelette.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12rem;
+  width: 100%;
+}
+
+article {
+  padding: 2rem;
+}
+
+.introductory {
+  font-family: outfit;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.introductory_heading {
+  font-family: young-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.preparation {
+  font-family: outfit;
+  font-weight: 400;
+  margin-left: 2rem;
+  width: 13rem;
+  margin-bottom: 1.5rem;
+  color: var(--Stone-6);
+}
+
+.preparation_heading {
+  margin-bottom: 0.5rem;
+  color: var(--Rose);
+}
+
+.ingredients {
+  margin-bottom: 1.5rem;
+  font-family: outfit;
+  font-weight: 400;
+  color: var(--Stone-6);
+}
+
+.ingredients_heading {
+  font-family: young-serif;
+  font-weight: 400;
+  color: var(--Brown);
+}
+
+.instruction {
+  margin-bottom: 1.5rem;
+  font-family: outfit;
+  font-weight: 400;
+  color: var(--Stone-6);
+}
+
+.instruction_heading {
+  font-family: young-serif;
+  font-weight: 400;
+  color: var(--Brown);
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+li {
+  margin: 0 0 0.5rem 1.4rem;
+}
+
+.nutrition_heading {
+  font-family: young-serif;
+  font-weight: 400;
+  color: var(--Brown);
+}
+
+.nutrition_paragraph {
+  font: outfit;
+  font-weight: 400;
+  color: var(--Stone-6);
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0.5rem 0 0 0;
+  font-family: outfit;
+  color: var(--Stone-6);
+}
+
+th {
+  padding: 0 0 0.3rem 2.5rem;
+  color: var(--Rose);
+}
+
+td {
+  padding: 0.5rem 0 0 2rem;
+}
+
+.table_data {
+  color: var(--Brown);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Stone-15);
+    padding: 5rem 0;
+  }
+
+  main {
+    max-width: 40rem;
+    background-color: var(--White);
+    border-radius: 2rem;
+  }
+
+  article {
+    padding: 0.4rem;
+  }
+
+  .Img_section {
+    border-radius: 2rem 2rem 0 0;
+  }
+}
